@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<title>Zachary Siedlecki - Drawing Tool</title>
+	<link rel="icon" type="image/png" href="../images/icon.png">
+	<meta name="description" content="" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="./page.css" />
+	<link rel="stylesheet" href="./style.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+			href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400;500;600;700&display=swap"
+			rel="stylesheet"
+	/>
+</head>
+<!-- P5 Loaded from a CDN -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.2.0/p5.min.js"></script> -->
+
+<!-- Or P5 loaded locally -->
+<script src="../shared/p5.min.js"></script>
+
+
+<script src="vector.js"></script>
+<script src="curve.js"></script>
+
+<!-- Implement all the tools -->
+<script src="tools.js"></script>
+
+<!-- My app's code goes last,
+    because it needs to refer to things in the previous two JS files -->
+<script src="app.js"></script>
+
+
+
+<body>
+
+<div class="main" id="main">
+	<div id="main-column">
+		<div class="pix">
+			<h1>ZackPix</h1>
+		</div>
+		<div class="frame" id="p5-holder">
+			<!-- Processing gets installed here -->
+		</div>
+
+		<div class="buttons">
+			<button class="button" onclick="tool.clearCanvas(tool.p)">🕳</button>
+			<button class="button" onclick="tool.rainbowClearCanvas(tool.p)">🕳(🌈)</button>
+			<button class="button" onclick="tool.mode='pencil'">✏️</button>
+			<button class="button" onclick="tool.mode='scatterPencil'">🖌</button>
+			<button class="button" onclick="tool.mode='trail'">☄️</button>
+			<button class="button" onclick="tool.mode='garland'">🌸</button>
+			<button class="button" onclick="tool.mode='smoothPencil'">🧵</button>
+			<button class="button" onclick="tool.mode='cave'">🗻</button>
+			<button class="button" onclick="tool.mode='rave'">💡</button>
+		</div>
+		<div class="options">
+			<!-- <input type="color" id="color0" onchange="tool.color0 = hexToHSL(this.value)"> -->
+			<input type="color" id="color0" onchange="tool.color0 = hexToHSL(this.value)">
+			<input type="color" id="color1" onchange="tool.color1 = hexToHSL(this.value)">
+			<input type="range" min="5" max="100" value="10" class="slider" onchange="tool.size = this.value*.1">
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

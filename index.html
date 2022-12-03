@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>Zachary Siedlecki</title>
+  <link rel="icon" type="image/png" href="images/icon.png">
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+          href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400;500;600;700&display=swap"
+          rel="stylesheet"
+  />
+</head>
+
+<body>
+<section>
+  <div class="nav-wrapper" id="navbar">
+    <nav>
+      <h2 tabindex="1" class="name">Zachary Siedlecki</h2>
+      <ul>
+        <li><a tabindex="2" href="index.html">Home</a></li>
+        <li><a tabindex="3" href="shared/Zachary-Siedlecki.pdf" target="_blank" rel="noreferrer noopener">Resume</a></li>
+        <li><a tabindex="4" href="a2/index.html">Project 1</a></li>
+        <li><a tabindex="5" href="a7/index.html">Project 2</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="container">
+    <h1 class="main-title">Welcome to my</h1>
+    <h1 class="typing">webpage</h1>
+    <img src="images/bg.png" class="bg" alt="background" />
+    <img src="images/mountain.png" class="mountain" alt="middleground" />
+    <img src="images/girl.png" class="girl" alt="foreground" />
+  </div>
+  <div class="content" id="content">
+    <div id="bio">
+      <h2 tabindex="6" id="about-me">About Me:</h2>
+      <p tabindex="7" id="about-me-content">My name is Zachary Siedlecki. I live in Chesapeake, Viginia and I am a junior studying computer science
+         at Northwestern University. Some of my hobbies include gaming, bowling, and playing the drums!
+      I hope you enjoy my webpage!</p>
+      <h3 tabindex="8" id="contact">My Contact Info:</h3>
+      <ul>
+        <li tabindex="9">Phone: +1(757)419-9077</li>
+        <li tabindex="10">Email: zacharysiedlecki@u.northwestern.edu</li>
+      </ul>
+    </div>
+    <div id="projects">
+      <table>
+        <tr>
+          <th><a tabindex="11" href="a2/index.html"><img src="images/project1.PNG" id="p1" alt="project 1 screenshot"></a></th>
+          <th><a tabindex="13" href="a7/index.html"><img src="images/project2.PNG" id="p2" alt="project 2 screenshot"></a></th>
+        </tr>
+        <tr>
+          <td tabindex="12" class="description">This project randomly generates images with javascript and updates them in real time.
+            It simulates some physics particles with noise to create images with unique properties.
+            There are four different images that are generated.
+            Click the image or link on the navigation bar to visit project 1.
+          </td>
+          <td tabindex="14" class="description">This project creates various entities using randomized properties.
+          Users can choose between fish, faces, trees, rectangles, and cicles. Users can customize the properties
+          to create the exact entity they want. Click the image or link on the navigation bar to visit project 2.</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</section>
+
+<script
+        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"
+        integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ=="
+        crossorigin="anonymous"
+></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.js"></script>
+<script src="./script.js"></script>
+</body>
+</html>
